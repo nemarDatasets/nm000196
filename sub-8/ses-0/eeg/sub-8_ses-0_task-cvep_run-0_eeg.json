@@ -1,0 +1,46 @@
+{
+	"TaskName": "cvep",
+	"Manufacturer": "BioSemi",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 2048.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "downsampling from 2048 Hz to 360 Hz, linear de-trending, common average referencing, spectral filtering"
+		}
+	},
+	"RecordingDuration": 258.62451171875,
+	"RecordingType": "continuous",
+	"EEGReference": "CMS/DRL",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 64,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "Biosemi ActiveTwo",
+	"SoftwareVersions": "n/a",
+	"HardwareFilters": {
+		"Bandpass": {
+			"band1": [
+				5,
+				48
+			],
+			"band2": [
+				52,
+				100
+			]
+		}
+	},
+	"TaskDescription": "6x6 matrix speller BCI using modulated Gold codes for visual stimulation; participants focused on target symbols while cells flashed according to pseudo-random bit-sequences Trial duration: 4.2s.",
+	"Instructions": "participants visually attended cells containing target symbols during stimulation",
+	"InstitutionName": "Radboud University Nijmegen",
+	"InstitutionAddress": "NL",
+	"InstitutionalDepartmentName": "Donders Center for Cognition",
+	"CapManufacturer": "n/a",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "EEG recording.",
+	"MISCChannelCount": 0
+}

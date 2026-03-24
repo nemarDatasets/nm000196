@@ -1,0 +1,232 @@
+_dataset:
+  class: Thielen2015
+  code: Thielen2015
+  doi: 10.34973/1ecz-1232
+  interval: !!python/tuple
+  - 0
+  - 0.3
+  n_subjects: 12
+  paradigm: cvep
+abstract: Brain-Computer Interfaces (BCIs) allow users to control devices and communicate by using brain activity only. BCIs
+  based on broad-band visual stimulation can outperform BCIs using other stimulation paradigms. Visual stimulation with pseudo-random
+  bit-sequences evokes specific Broad-Band Visually Evoked Potentials (BBVEPs) that can be reliably used in BCI for high-speed
+  communication in speller applications. In this study, we report a novel paradigm for a BBVEP-based BCI that utilizes a generative
+  framework to predict responses to broad-band stimulation sequences. In this study we designed a BBVEP-based BCI using modulated
+  Gold codes to mark cells in a visual speller BCI. We defined a linear generative model that decomposes full responses into
+  overlapping single-flash responses. These single-flash responses are used to predict responses to novel stimulation sequences,
+  which in turn serve as templates for classification. The linear generative model explains on average 50% and up to 66% of
+  the variance of responses to both seen and unseen sequences. In an online experiment, 12 participants tested a 6 × 6 matrix
+  speller BCI. On average, an online accuracy of 86% was reached with trial lengths of 3.21 seconds. This corresponds to an
+  Information Transfer Rate of 48 bits per minute (approximately 9 symbols per minute). This study indicates the potential
+  to model and predict responses to broad-band stimulation. These predicted responses are proven to be well-suited as templates
+  for a BBVEP-based BCI, thereby enabling communication and control by brain activity only.
+acquisition:
+  channel_types:
+    eeg: 64
+  electrode_type: active
+  hardware: Biosemi ActiveTwo
+  line_freq: 50.0
+  montage: standard_1020
+  n_channels: 64
+  reference: CMS/DRL
+  sampling_rate: 2048.0
+  sensor_type: EEG
+  sensors:
+  - AF3
+  - AF4
+  - AF7
+  - AF8
+  - AFz
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - CPz
+  - Cz
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FCz
+  - FT7
+  - FT8
+  - Fp1
+  - Fp2
+  - Fpz
+  - Fz
+  - Iz
+  - O1
+  - O2
+  - Oz
+  - P1
+  - P10
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - P7
+  - P8
+  - P9
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - POz
+  - Pz
+  - T7
+  - T8
+  - TP7
+  - TP8
+bci_application:
+  applications:
+  - speller
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: training-testing split
+  evaluation_type:
+  - within-subject
+data_processed: true
+data_structure:
+  n_trials: 108
+  trials_context: '108 total per subject: 3 fixed-length copy-spelling runs x 36 trials per run, each trial 4.2 seconds (4
+    code cycles)'
+documentation:
+  contact_info:
+  - jordy.thielen@gmail.com
+  - info@donders.ru.nl
+  country: NL
+  data_url: https://public.data.ru.nl/dcc/DSC_2018.00047_553_v3
+  doi: 10.1371/journal.pone.0133797
+  ethics_approval:
+  - Ethical Committee of the Faculty of Social Sciences at the Radboud University Nijmegen
+  funding:
+  - BrainGain Smart Mix Program of the Netherlands Ministry of Economic Affairs
+  - Netherlands Ministry of Education, Culture and Science (SSM06011)
+  institution: Radboud University Nijmegen
+  institution_department: Donders Center for Cognition
+  investigators:
+  - Jordy Thielen
+  - Philip van den Broek
+  - Jason Farquhar
+  - Peter Desain
+  keywords:
+  - Brain-Computer Interface
+  - BCI
+  - Broad-Band Visually Evoked Potentials
+  - BBVEP
+  - Gold codes
+  - reconvolution
+  - speller
+  - visual stimulation
+  license: CC0-1.0
+  publication_year: 2015
+  repository: GitHub
+  senior_author: Peter Desain
+experiment:
+  class_labels:
+  - '1.0'
+  - '0.0'
+  events:
+    '0.0': 100
+    '1.0': 101
+  feedback_type: visual
+  instructions: participants visually attended cells containing target symbols during stimulation
+  mode: online
+  n_classes: 2
+  paradigm: cvep
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: pseudo-random noise-code
+  study_design: 6x6 matrix speller BCI using modulated Gold codes for visual stimulation; participants focused on target symbols
+    while cells flashed according to pseudo-random bit-sequences
+  synchronicity: synchronous
+  trial_duration: 4.2
+file_format: mat
+methodology: 'The study implements a novel BBVEP-based BCI using modulated Gold codes with a reconvolution approach for template
+  generation. The reconvolution model decomposes responses into single-flash responses (short and long pulses) and predicts
+  responses to unseen sequences. Two sets of Gold codes were used: set V for training (65 sequences) and set U for testing
+  (65 sequences). Each sequence had 126 bits with duration of 1.05s. The classifier uses template matching with correlation,
+  combined with Canonical Correlation Analysis for spatial filtering. Subset optimization (Platinum subset) selects the most
+  distinguishable codes, and layout optimization arranges codes on the 6x6 grid to minimize cross-talk. An early stopping
+  algorithm was implemented to reduce trial duration. Online experiments were conducted with 12 participants using a synchronous
+  BCI paradigm.'
+paradigm_specific:
+  code_length: 126
+  code_type: modulated Gold codes
+  detected_paradigm: cvep
+  n_targets: 36
+participants:
+  age_mean: 24.0
+  age_std: 2.3
+  bci_experience: naive
+  clinical_population: Healthy
+  gender:
+    female: 8
+    male: 4
+  health_status: patients
+  n_subjects: 12
+  species: human
+performance:
+  accuracy_percent_early_stopping: 86.0
+  accuracy_percent_fixed_length: 86.0
+  itr_bits_per_min_early_stopping: 48.37
+  itr_bits_per_min_fixed_length: 38.12
+  spm_early_stopping: 8.99
+  spm_fixed_length: 6.93
+preprocessing:
+  bandpass:
+    band1:
+    - 5
+    - 48
+    band2:
+    - 52
+    - 100
+  data_state: preprocessed
+  downsampled_to_hz: 360.0
+  highpass_hz: 5
+  lowpass_hz: 100
+  preprocessing_applied: true
+  preprocessing_steps:
+  - downsampling from 2048 Hz to 360 Hz
+  - linear de-trending
+  - common average referencing
+  - spectral filtering
+  re_reference: car
+runs_per_session: 3
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - template matching
+  - CCA
+  feature_extraction:
+  - correlation
+  spatial_filters:
+  - Canonical Correlation Analysis
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - Research
