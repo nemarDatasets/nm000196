@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000196-blue)](https://doi.org/10.82901/nemar.nm000196)
+
 # c-VEP dataset from Thielen et al. (2015)
 
 c-VEP dataset from Thielen et al. (2015)
