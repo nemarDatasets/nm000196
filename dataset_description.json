@@ -1,48 +1,50 @@
 {
-	"Name": "c-VEP dataset from Thielen et al. (2015)",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC0-1.0",
-	"Authors": [
-		"Jordy Thielen",
-		"Philip van den Broek",
-		"Jason Farquhar",
-		"Peter Desain"
-	],
-	"Funding": [
-		"BrainGain Smart Mix Program of the Netherlands Ministry of Economic Affairs",
-		"Netherlands Ministry of Education, Culture and Science (SSM06011)"
-	],
-	"EthicsApprovals": [
-		"Ethical Committee of the Faculty of Social Sciences at the Radboud University Nijmegen"
-	],
-	"ReferencesAndLinks": [
-		"https://public.data.ru.nl/dcc/DSC_2018.00047_553_v3"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.34973/1ecz-1232",
-			"URL": "https://public.data.ru.nl/dcc/DSC_2018.00047_553_v3"
-		}
-	],
-	"Keywords": [
-		"Brain-Computer Interface",
-		"BCI",
-		"Broad-Band Visually Evoked Potentials",
-		"BBVEP",
-		"Gold codes",
-		"reconvolution",
-		"speller",
-		"visual stimulation"
-	],
-	"PublicationYear": 2015
+  "Name": "c-VEP dataset from Thielen et al. (2015)",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC0-1.0",
+  "Authors": [
+    "Jordy Thielen",
+    "Philip van den Broek",
+    "Jason Farquhar",
+    "Peter Desain"
+  ],
+  "Funding": [
+    "BrainGain Smart Mix Program of the Netherlands Ministry of Economic Affairs",
+    "Netherlands Ministry of Education, Culture and Science (SSM06011)"
+  ],
+  "EthicsApprovals": [
+    "Ethical Committee of the Faculty of Social Sciences at the Radboud University Nijmegen"
+  ],
+  "ReferencesAndLinks": [
+    "https://public.data.ru.nl/dcc/DSC_2018.00047_553_v3"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.34973/1ecz-1232",
+      "URL": "https://public.data.ru.nl/dcc/DSC_2018.00047_553_v3"
+    }
+  ],
+  "Keywords": [
+    "Brain-Computer Interface",
+    "BCI",
+    "Broad-Band Visually Evoked Potentials",
+    "BBVEP",
+    "Gold codes",
+    "reconvolution",
+    "speller",
+    "visual stimulation"
+  ],
+  "PublicationYear": 2015,
+  "DatasetDOI": "10.82901/nemar.nm000196",
+  "Version": "1.0.0"
 }
