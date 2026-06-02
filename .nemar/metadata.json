@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "c-VEP dataset from Thielen et al. (2015)",
+  "description": "A preprocessed EEG dataset from 12 healthy participants performing a brain-computer interface task based on broad-band visually evoked potentials (BBVEPs). The study implements a novel paradigm using modulated Gold codes for a 6×6 matrix speller BCI, employing a reconvolution approach to model and predict neural responses to pseudo-random visual stimulation sequences. Data were acquired at 2048 Hz from 64 electrodes and preprocessed with filtering, downsampling, and common average referencing.",
+  "methods_description": "EEG data were recorded from 12 healthy participants (mean age 24±2.3 years) using a Biosemi ActiveTwo system with 64 active electrodes at 2048 Hz sampling rate. Participants performed three runs of a synchronous 6×6 matrix speller BCI task using modulated Gold codes for visual stimulation. Each trial lasted 4.2 seconds (4 code cycles) with 36 targets per run. Data were preprocessed with bandpass filtering (5-100 Hz with notch at 50 Hz), linear de-trending, common average referencing, and downsampling to 360 Hz. Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Jordy Thielen": {
       "orcid": "0000-0002-6264-0367"
@@ -11,6 +16,33 @@
     },
     "Peter Desain": {}
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Gold codes"
+    },
+    {
+      "term": "speller BCI"
+    },
+    {
+      "term": "Canonical Correlation Analysis"
+    },
+    {
+      "term": "visual stimulation"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.34973/1ecz-1232",
@@ -46,14 +78,11 @@
       "award_number": "SSM06011"
     }
   ],
-  "title": "c-VEP dataset from Thielen et al. (2015)",
-  "license": "CC0-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "3.7 GB (37 files)"
   ],
@@ -65,35 +94,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "A preprocessed EEG dataset from a brain-computer interface study using broad-band visually evoked potentials (BBVEP) for a 6×6 matrix speller application. The dataset comprises 12 healthy participants performing online BCI tasks with visual stimulation using modulated Gold codes, achieving an average accuracy of 86% and information transfer rate of 48 bits per minute. Data were acquired at 2048 Hz from 64 EEG channels and preprocessed with filtering, downsampling, and common average referencing.",
-  "methods_description": "EEG data were acquired from 12 participants using a Biosemi ActiveTwo system with 64 active electrodes at 2048 Hz sampling rate. The experimental paradigm employed a 6×6 matrix speller with visual stimulation using modulated Gold codes (126-bit sequences, 1.05s duration). Participants performed three runs of copy-spelling tasks with 36 trials per run. Data were preprocessed including downsampling to 360 Hz, linear de-trending, common average referencing, and bandpass filtering (5-100 Hz with notch filtering at 50 Hz). Classification used template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
-  "keywords": [
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "visual stimulation"
-    },
-    {
-      "term": "speller BCI"
-    },
-    {
-      "term": "Gold codes"
-    },
-    {
-      "term": "canonical correlation analysis"
-    }
-  ],
-  "source_hash": "20cbc5388a55e44dc937351cdd449e777c1a6c67013b5c107638087ec228ae72"
+  "source_hash": "c494239897710abade63b64be5e3397e40ad0b13fea6ba0480c7532dd0517cfd"
 }
