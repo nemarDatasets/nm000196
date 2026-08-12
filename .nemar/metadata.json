@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2015)",
-  "description": "A preprocessed EEG dataset from 12 healthy participants performing a brain-computer interface task based on broad-band visually evoked potentials (BBVEPs). The study implements a novel paradigm using modulated Gold codes for a 6×6 matrix speller BCI, employing a reconvolution approach to model and predict neural responses to pseudo-random visual stimulation sequences. Data were acquired at 2048 Hz from 64 electrodes and preprocessed with filtering, downsampling, and common average referencing.",
-  "methods_description": "EEG data were recorded from 12 healthy participants (mean age 24±2.3 years) using a Biosemi ActiveTwo system with 64 active electrodes at 2048 Hz sampling rate. Participants performed three runs of a synchronous 6×6 matrix speller BCI task using modulated Gold codes for visual stimulation. Each trial lasted 4.2 seconds (4 code cycles) with 36 targets per run. Data were preprocessed with bandpass filtering (5-100 Hz with notch at 50 Hz), linear de-trending, common average referencing, and downsampling to 360 Hz. Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
+  "description": "This dataset comprises preprocessed EEG recordings from 12 healthy participants performing a brain-computer interface (BCI) task based on broad-band visually evoked potentials (BBVEPs). Participants controlled a 6×6 matrix speller by attending to target symbols while cells were stimulated with pseudo-random Gold code sequences. The study demonstrates a novel reconvolution approach for template generation in BBVEP-based BCIs, achieving 86% online accuracy with an information transfer rate of 48 bits per minute.",
+  "methods_description": "EEG data were acquired from 64 channels using a Biosemi ActiveTwo system at 2048 Hz sampling rate with CMS/DRL reference. Participants completed 3 runs of 36 trials each (4.2 seconds per trial). Data were preprocessed including downsampling to 360 Hz, linear de-trending, common average referencing, and bandpass filtering (5-100 Hz with notch at 50 Hz). Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,12 +20,11 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Evoked Potentials, Visual",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
+      "term": "Visually Evoked Potentials"
     },
     {
       "term": "EEG"
@@ -34,13 +33,13 @@
       "term": "Gold codes"
     },
     {
-      "term": "speller BCI"
-    },
-    {
-      "term": "Canonical Correlation Analysis"
+      "term": "BCI speller"
     },
     {
       "term": "visual stimulation"
+    },
+    {
+      "term": "Canonical Correlation Analysis"
     }
   ],
   "related_identifiers": [
@@ -55,13 +54,13 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000196",
-      "identifier_type": "URL",
+      "identifier": "10.1371/journal.pone.0133797",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "10.1371/journal.pone.0133797",
-      "identifier_type": "DOI",
+      "identifier": "https://nemar.org/dataset/nm000196",
+      "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -84,15 +83,18 @@
     "eeg"
   ],
   "sizes": [
-    "3.7 GB (37 files)"
+    "11.8 GB (73 files)"
   ],
   "formats": [
     ".bdf",
+    ".gdf",
     ".json",
+    ".loc",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "c494239897710abade63b64be5e3397e40ad0b13fea6ba0480c7532dd0517cfd"
+  "source_hash": "8033ca9d8ba4b755d3b7fecd63aa5899b8c4defd399f3f7a9ea265f9e44bea6e"
 }
