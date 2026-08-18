@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2015)",
-  "description": "A preprocessed EEG dataset from 12 healthy participants performing a brain-computer interface task based on broad-band visually evoked potentials (BBVEPs). The study implements a novel paradigm using modulated Gold codes in a 6×6 matrix speller, where participants attended target symbols during pseudo-random visual stimulation. Data were acquired at 2048 Hz from 64 electrodes and preprocessed with filtering, downsampling, and common average referencing, achieving 86% online accuracy with an information transfer rate of 48 bits per minute.",
-  "methods_description": "EEG data were acquired from 12 healthy participants using a Biosemi ActiveTwo system with 64 active electrodes at 2048 Hz sampling rate. The experimental paradigm consisted of 3 runs per session with 36 trials each (4.2 seconds per trial). Visual stimulation used modulated Gold codes (126 bits, 1.05s duration) in a 6×6 matrix speller. Preprocessing included downsampling to 360 Hz, linear de-trending, common average referencing, and bandpass filtering (5-48 Hz and 52-100 Hz). Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
+  "description": "This dataset comprises preprocessed EEG recordings from 12 healthy participants performing a brain-computer interface task based on broad-band visually evoked potentials (BBVEPs). Participants controlled a 6×6 matrix speller by attending to target symbols while cells were stimulated with pseudo-random Gold code sequences. The study demonstrates a novel reconvolution approach for template generation that achieves 86% online accuracy and an information transfer rate of 48 bits per minute.",
+  "methods_description": "EEG data were acquired from 64 channels using a Biosemi ActiveTwo system at 2048 Hz sampling rate with CMS/DRL reference. Participants completed 3 runs of 36 trials each (4.2 seconds per trial). Data were preprocessed including downsampling to 360 Hz, linear de-trending, common average referencing, and bandpass filtering (5-100 Hz with notch at 50 Hz). Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -20,17 +20,18 @@
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Visually Evoked Potentials"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
       "term": "EEG"
     },
     {
-      "term": "BBVEP"
+      "term": "visual stimulation"
     },
     {
       "term": "Gold codes"
@@ -39,7 +40,7 @@
       "term": "speller BCI"
     },
     {
-      "term": "visual stimulation"
+      "term": "reconvolution"
     }
   ],
   "related_identifiers": [
@@ -96,5 +97,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "eae7e6b80771606cd9b86665e2a2d2f9ee60729b5e8459aff52767795e3287e2"
+  "source_hash": "a507d84e67dc92064526fb2068bf52ee69f42ffaf5edbfc8b0b4d7115bf44d69"
 }
