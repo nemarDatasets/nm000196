@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2015)",
-  "description": "This dataset comprises preprocessed EEG recordings from 12 healthy participants performing a brain-computer interface task based on broad-band visually evoked potentials (BBVEPs). Participants controlled a 6×6 matrix speller by attending to target symbols while cells were stimulated with pseudo-random Gold code sequences. The study demonstrates a novel reconvolution approach for template generation that achieves 86% online accuracy and an information transfer rate of 48 bits per minute.",
-  "methods_description": "EEG data were acquired from 64 channels using a Biosemi ActiveTwo system at 2048 Hz sampling rate with CMS/DRL reference. Participants completed 3 runs of 36 trials each (4.2 seconds per trial). Data were preprocessed including downsampling to 360 Hz, linear de-trending, common average referencing, and bandpass filtering (5-100 Hz with notch at 50 Hz). Classification employed template matching with correlation and Canonical Correlation Analysis for spatial filtering.",
+  "description": "A 64-channel EEG dataset of a broad-band visually evoked potential (BBVEP) brain-computer interface, recorded from 12 healthy participants using a 6x6 matrix speller. Cells were flashed with modulated Gold codes, and participants performed copy-spelling in three runs of 36 trials. The data support reconvolution-based template prediction and code-modulated VEP (c-VEP) classification, with reported online accuracy of about 86%.",
+  "methods_description": "EEG was recorded with a Biosemi ActiveTwo system (64 active electrodes, 2048 Hz, CMS/DRL reference). Participants attended target cells of a 6x6 speller stimulated with pseudo-random modulated Gold codes (126 bits, 4.2 s trials). Data were downsampled to 360 Hz, detrended, common-average referenced and spectrally filtered. Classification used template matching with canonical correlation analysis.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,21 +23,23 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
       "term": "Evoked Potentials, Visual",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
-      "term": "EEG"
-    },
-    {
-      "term": "visual stimulation"
+      "term": "c-VEP"
     },
     {
       "term": "Gold codes"
     },
     {
-      "term": "speller BCI"
+      "term": "speller"
     },
     {
       "term": "reconvolution"
@@ -63,15 +65,21 @@
       "identifier": "https://nemar.org/dataset/nm000196",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
     {
       "funder_name": "BrainGain Smart Mix Program of the Netherlands Ministry of Economic Affairs"
-    },
-    {
-      "funder_name": "Netherlands Ministry of Economic Affairs",
-      "award_title": "BrainGain Smart Mix Program"
     },
     {
       "funder_name": "Netherlands Ministry of Education, Culture and Science",
@@ -84,7 +92,7 @@
     "eeg"
   ],
   "sizes": [
-    "11.8 GB (73 files)"
+    "11.02 GB (73 files)"
   ],
   "formats": [
     ".bdf",
