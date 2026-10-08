@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "c-VEP dataset from Thielen et al. (2015)",
-  "description": "A 64-channel EEG dataset of a broad-band visually evoked potential (BBVEP) brain-computer interface, recorded from 12 healthy participants using a 6x6 matrix speller. Cells were flashed with modulated Gold codes, and participants performed copy-spelling in three runs of 36 trials. The data support reconvolution-based template prediction and code-modulated VEP (c-VEP) classification, with reported online accuracy of about 86%.",
-  "methods_description": "EEG was recorded with a Biosemi ActiveTwo system (64 active electrodes, 2048 Hz, CMS/DRL reference). Participants attended target cells of a 6x6 speller stimulated with pseudo-random modulated Gold codes (126 bits, 4.2 s trials). Data were downsampled to 360 Hz, detrended, common-average referenced and spectrally filtered. Classification used template matching with canonical correlation analysis.",
+  "description": "A 64-channel EEG dataset from 12 healthy participants using a broad-band visually evoked potential (BBVEP) brain-computer interface. The interface was a 6x6 matrix speller driven by modulated Gold codes. Participants completed three copy-spelling runs of 36 trials each. The original study used a reconvolution model to predict responses to unseen stimulation sequences and used them as templates for classification. It reached about 86% online accuracy.",
+  "methods_description": "EEG was recorded with a Biosemi ActiveTwo system (64 active electrodes, 2048 Hz) while participants attended target cells in a 6x6 speller flashing with modulated Gold codes (126 bits, 1.05 s per cycle). Each trial lasted 4.2 s (4 code cycles). Data were downsampled to 360 Hz, linearly de-trended, common-average referenced and spectrally filtered. Classification used template matching with correlation and canonical correlation analysis for spatial filtering.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -18,14 +18,14 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
       "term": "Evoked Potentials, Visual",
@@ -105,5 +105,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "a507d84e67dc92064526fb2068bf52ee69f42ffaf5edbfc8b0b4d7115bf44d69"
+  "source_hash": "cd33944b6a600b138de10bde856aa419a7da3a2abcc6338f548d28f81adb2ae8"
 }
