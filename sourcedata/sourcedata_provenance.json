@@ -15,7 +15,7 @@
    "file": "resources/biosemi64.loc",
    "bytes": 1973,
    "sha256": "03b32addae79ff9d65e0120a65d5066a436e20809c39bc823a3b7caf32c31fc7",
-   "subject": "12"
+   "subject": null
   },
   {
    "file": "sub-01/test_sync_1/sub-01_test_sync_1.gdf",
@@ -451,5 +451,15 @@
   }
  ],
  "nested_sourcedata_collapsed": 72,
- "n_subjects_recorded": 12
+ "n_subjects_recorded": 12,
+ "revisions": [
+  {
+   "date": "2026-10-17",
+   "version": "1.0.5",
+   "added_files": 0,
+   "added_bytes": 0,
+   "note": "Subject label corrected for 1 entry (the shared electrode file `resources/biosemi64.loc` was filed under subject 12). New labels follow moabb.datasets.Thielen2015: resources/biosemi64.loc 12 -> null. No file added or changed.",
+   "subject_corrections": 1
+  }
+ ]
 }

@@ -1,0 +1,4 @@
+1.0.5 2026-10-17
+  - sourcedata_provenance.json: corrected the subject label of 1 entry (the shared electrode file `resources/biosemi64.loc` was filed under subject 12).
+    resources/biosemi64.loc: 12 -> null
+    No data file added, changed or removed; the BIDS tree is unchanged.
